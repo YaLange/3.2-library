@@ -1,0 +1,43 @@
+
+GET http://127.0.0.1:8000/api/v1/books/
+
+###
+
+POST http://127.0.0.1:8000/api/v1/books/create/
+Content-Type: application/json
+
+{
+    "author": "А.С.Пушкин",
+    "title": "Сказка о царе Салтане",
+    "year": 1831
+}
+
+###
+
+GET http://127.0.0.1:8000/api/v1/books/3/
+
+###
+
+PATCH http://127.0.0.1:8000/api/v1/books/update/4/
+Content-Type: application/json
+
+{
+    "title": "Сказка о царе Салтане, о сыне его славном и могучем богатыре князе Гвидоне Салтановиче и о прекрасной царевне Лебеди"
+}
+
+###
+
+DELETE http://127.0.0.1:8000/api/v1/books/delete/5/
+
+###
+
+GET http://127.0.0.1:8000/api/v1/orders/2/
+
+###
+
+PATCH http://127.0.0.1:8000/api/v1/orders/2/
+Content-Type: application/json
+
+{
+    "user_name": "Иванов Иван Иванович"
+}
